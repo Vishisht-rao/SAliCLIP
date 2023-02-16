@@ -14,6 +14,8 @@ For Mac
 ```
 pip install -r requirementsMac.txt 
 ```
+## SAliCLIP Model
+The SAliCLIP Model should be downloaded from here : https://drive.google.com/file/d/1cttNVMHIRxYpDCYFatXe2WKM-pIQcUA0/view?usp=sharing
 ### Environment Setup
 Before running the below command make sure your system has [git](https://www.atlassian.com/git/tutorials/install-git) and [curl](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux) commands installed.
 ```
