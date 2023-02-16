@@ -9,9 +9,9 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 ### Enviornment Setup
 Before running the below command make sure your system has [git](https://www.atlassian.com/git/tutorials/install-git) and [curl](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux) commands installed.
 ```
-python3 envSetup.py
+python3 EnvSetup.py
 ```
 ## Running SAliCLIP
 ```
-streamlit run main_vq.py
+streamlit run Main.py
 ```
