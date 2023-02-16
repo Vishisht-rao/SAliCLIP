@@ -1,0 +1,56 @@
+[Device]
+device = cpu
+
+[Paths]
+AUDIO_DIRECTORY_FLICKR = Capstone/Datasets/Flickr/flickr_audio/wavs/
+IMAGE_DIRECTORY_FLICKR = Capstone/Datasets/Flickr/Images/ 
+AUDIO_DIRECTORY_COCO = Capstone/Datasets/Coco/SpokenCOCO/
+IMAGE_DIRECTORY_COCO = Capstone/Datasets/Coco/Images/ 
+AUDIO_DIRECTORY_OBJECTNET = Capstone/Datasets/ObjectNet/Spoken-ObjectNet-50k/
+IMAGE_DIRECTORY_OBJECTNET = Capstone/Datasets/ObjectNet/Images_compressed/ 
+PREDICTION_DIR_FLICKR = Capstone/Validation_Audios/
+EXPERIMENTS_DIR = Capstone/Experiments2/mlruns/  
+
+[Hyperparameters]
+UseGAPImage = True 
+UseGAPAudio = True 
+UseImageProjectionHead = False 
+UseAudioProjectionHead = True 
+EMBEDDING_DIM = 768 
+PROJECTION_DIM = 512 
+FreezeImageEncoder = True 
+FreezeAudioEncoder = False 
+INPUT_TDIM = 512 
+INPUT_FDIM = 128 
+FRAME_LENGTH = 25 
+FRAME_SHIFT = 10 
+NOISE = True 
+FREQM = 0 
+TIMEM = 0 
+SKIP_NORM = False  
+EXPERIMENT_NAME = clip-run 
+DATASET = COCO 
+FlickrTrainLen = 36000 
+FlickrDataLen = 40000 
+FlickrPredictLen = 2 
+CocoTrainLen = 592187 
+CocoValLen = 25035 
+ObjectNetTrainLen = 40000 
+ObjectNetValLen = 5000 
+ObjectNetTestLen = 5000 
+LossFunctionName = ClipLoss
+ImageEncoderLearningRate = 0.0001 
+AudioEncoderLearningRate = 0.00001 
+ProjectionHeadLearningRate = 0.005 
+WeightDecay = 0.005 
+Factor = 0.1 
+Patience = 2 
+Gamma = 0.96 
+OptimizerName = AdamW
+SchedulerName = ExponentialLR
+NumEpochs = 10 
+BATCH_SIZE = 48 
+Temperature = 1.0 
+Momentum = 0.9 
+PRECOMPUTE_FLAG = False 
+TopMatches = 9 
