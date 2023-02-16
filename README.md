@@ -36,9 +36,9 @@ Once the Main file is run the following interface will open up.
 In the **Video Generator** tab, a user can input multiple audio files up to 200MB. Once the audio is uploaded it can be played in the interface. Then the user is given a choice to change some video generating parameters such as step size, cuts, number of iterations, break audio, and BRISQUE.</br> 
 + Step Size - This is the learning rate for the VQGAN Model.
 + Cuts - The number of cuts to perform in the generated image before sending it to the image encoder.
-+ Number of Iterations - The number of times an output image is generated. The loss is calculated between the output image and the input audio, and the model is back propagated such that the input is changed in the latent space to generate a better image.
++ Number of Iterations - The number of times an output image is generated. The loss is calculated between the output image and the input audio, and the loss is back propagated such that the input is changed in the latent space to generate a better image.
 + Break Audio - Selecting this option breaks the input audio into 2 parts and loss is calculated separately for these 2 parts and is added to the total loss of the audio and image. Less weight is given to these 2 losses, this is because the overall context of the audio should not be lost.
-+ BRISQUE - Blind Reference Image Spatial Quality Estimator(BRISQUE) for the generated image at each epoch. A BRISQUE score of 0 indicates the highest quality image whereas a BRISQUE score of 150 indicates an extremely poor quality image, it takes into account factors such as sharpness of features, image clarity, pixel distribution, etc. to judge the quality of an image.</br>
++ BRISQUE - Blind Reference Image Spatial Quality Estimator(BRISQUE) is calculated for the generated image at each epoch. A BRISQUE score of 0 indicates the highest quality image whereas a BRISQUE score of 150 indicates an extremely poor quality image, it takes into account factors such as sharpness of features, image clarity, pixel distribution, etc. to judge the quality of an image.</br>
 </br>
 These audio clips are finally converted to a video which is later displayed with the audio of the corresponding audio clip.</br>
 </br>
