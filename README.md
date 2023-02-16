@@ -33,7 +33,7 @@ streamlit run Main.py
 ## Interface
 Once the Main file is run the following interface will open up.
 </br>
-<img alt="Image Classification Tab" src="https://github.com/Rithvik-G/SAliCLIP/blob/main/Images/Video_Generator.png">
+<img alt="Image Classification Tab" src="Images/Video_Generator.png">
 </br>
 In the **Video Generator** tab, a user can input multiple audio files up to 200MB. Once the audio is uploaded it can be played in the interface. Then the user is given a choice to change some video generating parameters such as step size, cuts, number of iterations, break audio, and BRISQUE.</br> 
 + Step Size - This is the learning rate for the VQGAN Model.
@@ -44,7 +44,7 @@ In the **Video Generator** tab, a user can input multiple audio files up to 200M
 </br>
 These audio clips are finally converted to a video which is later displayed with the audio of the corresponding audio clip.</br>
 </br>
-<img alt="Image Classification Tab" src="https://github.com/Rithvik-G/SAliCLIP/blob/main/Images/Image_Classification.png">
+<img alt="Image Classification Tab" src="Images/Image_Classification.png">
 </br>
 
 In the <b>Image Classification</b> tab, a user can input an image up to 200MB. Once the image is uploaded, the model gives an output predicting the class to which the image belongs. These classes can be found in the ListOfClassesForClassification.txt file.  
